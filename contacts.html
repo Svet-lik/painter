@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+  </head>
+  <body>
+    <header>
+      <ul class="menu">
+        <li><a href="./index.html">Главная</a></li>
+        <li><a href="./main-catalog.html">Каталог</a></li>
+        <li><a href="./contacts.html">Контакты</a></li>
+      </ul>
+    </header>
+    <main>
+      <hr />
+      <h1>Напишите нам</h1>
+      <form action="#">
+        <input type="text" placeholder="Ваше имя" required /><br />
+        <input type="email" placeholder="Ваш e-mail" required /><br />
+        <fieldset>
+          <legend>Ваш возраст:</legend>
+          <input type="radio" name="age" value="age1" id="age1" />
+          <label for="age1">Младше 18</label><br />
+          <input type="radio" name="age" value="age2" id="age2" />
+          <label for="age2">От 19 до 24</label><br />
+          <input type="radio" name="age" value="age3" id="age3" />
+          <label for="age3">От 25 до 34</label><br />
+          <input type="radio" name="age" value="age4" id="age4" />
+          <label for="age4">от 35 до 49</label><br />
+          <input type="radio" name="age" value="age5" id="age5" />
+          <label for="age5">50 и старше</label><br />
+        </fieldset>
+        <input
+          type="text"
+          name="tema"
+          id="tema"
+          placeholder="Тема"
+          required
+        /><br />
+        <textarea
+          name="text-message"
+          id="text-message"
+          cols="30"
+          rows="10"
+          placeholder="Текст обращения"
+          required
+        ></textarea
+        ><br />
+        <button type="submit">Отправить сообщение</button>
+        <button type="reset">Отмена</button>
+      </form>
+      <h3>Адрес</h3>
+      <p>Телефон: <a href="tel:888888">888-888</a></p>
+      <p>e-mail <a href="mailto:manager@painter.ru">manager@painter.ru</a></p>
+      <p>
+        Адрес: Москва, м. Электрозаводская, Мажоров переулок д.14,
+        стр.1&nbsp;оф.&nbsp;110
+      </p>
+      <p>
+        Бизнес центр ABС. К оплате принимаются как наличные, так и банковская
+        карта)
+      </p>
+      <p>
+        График работы офиса: <br />
+        Пн-Пт: с 09:00 до 21:00<br />
+        Сб-Вс: с 10:00 до 20:00<br />
+        Без обеда, без выходных
+      </p>
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A312ea1c7b3534436ebd2c62249c4ae6c3f404a4395813bd224d21c7999616436&amp;source=constructor"
+        width="665"
+        height="400"
+        frameborder="0"
+      ></iframe>
+      <hr />
+    </main>
+    <footer>
+      <p>&copy;&nbsp;Все права защищены</p>
+      <!-- <a href="http://gekbrains.ru" target="_blank">Geekbrains.ru</a> -->
+    </footer>
+  </body>
+</html>
