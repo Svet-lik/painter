@@ -4,60 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Товары для художников - кисти</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <!-- шапка страницы -->
-    <header>
+    <!-- шапка сайта -->
+    <div class="wrapper">
+      <img src="../img/logo.png" alt="logo" class="logo">
       <ul class="menu">
         <li><a href="../index.html">Главная</a></li>
         <li><a href="../main-catalog.html">Каталог</a></li>
         <li><a href="../contacts.html">Контакты</a></li>
       </ul>
+    </div>
     </header>
     <!-- основная информация -->
     <main>
       <hr />
-      <h1>Кисть имитация мангуста</h1>
-      <a href="../img/brush_sinthetics.jpg" target="_blank">
-        <img src="../img/brush_sinthetics_small.jpg" />
-      </a>
-      <h3>Краткое описание товара</h3>
-      <p>Кисть Roubloff имитация мангуста круглая &#8470;&nbsp;2</p>
-      <h3>Характеристики товара</h3>
-      <ul>
-        <li>Производитель: Roubloff</li>
-        <li>Применение: Инструмент для масла, акрила, гуаши, темперы</li>
-        <li>Серия: 1Т14</li>
-        <li>Категория: Кисти</li>
-        <li>Подкатегория: Синтетика</li>
-      </ul>
-      <h3>Подробное описание товара</h3>
-      <p>
-        Волос по&nbsp;своим характеристикам приближен к&nbsp;волосу мангуста.
-        Из&nbsp;него получаются кисти, прекрасно подходящие для работы
-        с&nbsp;жидкими красками. Кисть круглая с&nbsp;укороченной выставкой
-        из&nbsp;имитации мангуста. <br />Обойма медная, хромированная, ручка
-        короткая, пестрая глянцевая.
-      </p>
-      <ul>
-        <li>
-          <h4>Жесткость</h4>
-          <p>1&nbsp;из&nbsp;4</p>
-        </li>
-        <li>
-          <h4>Номер</h4>
-          <p>2</p>
-        </li>
-        <li>
-          <h4>Назначение</h4>
-          <p>
-            Используется для прорисовки фигур и&nbsp;округлых контуров.
-            <br />Подходит для для масла, акрила, гуаши, темперы.
-          </p>
-        </li>
-      </ul>
-      <h3>Цена</h3>
-      <p>120&nbsp;руб.</p>
+      <div class="container">
+        <h1>Кисть имитация мангуста</h1>
+        <a href="../img/brush_sinthetics.jpg" target="_blank">
+          <img src="../img/brush_sinthetics_small.jpg" />
+        </a>
+        <h3>Краткое описание товара</h3>
+        <p class="description-short">Кисть Roubloff имитация мангуста круглая &#8470;&nbsp;2</p>
+        <div class="specifications-fon">
+          <h3>Характеристики товара</h3>
+          <ul class="specifications">
+            <li><b>Производитель:</b> Roubloff</li>
+            <li><b>Применение:</b> Инструмент для масла, акрила, гуаши, темперы</li>
+            <li><b>Серия:</b> 1Т14</li>
+            <li><b>Категория:</b> Кисти</li>
+            <li><b>Подкатегория:</b> Синтетика</li>
+          </ul>
+        </div>
+        <h3>Подробное описание товара</h3>
+        <p class="description-full">
+          Волос по&nbsp;своим характеристикам приближен к&nbsp;волосу мангуста.
+          Из&nbsp;него получаются кисти, прекрасно подходящие для работы
+          с&nbsp;жидкими красками. Кисть круглая с&nbsp;укороченной выставкой
+          из&nbsp;имитации мангуста. <br />Обойма медная, хромированная, ручка
+          короткая, пестрая глянцевая.
+        </p>
+        <ul>
+          <li>
+            <h4>&#10002;&nbsp;Жесткость:</h4>
+            <p>1&nbsp;из&nbsp;4</p>
+          </li>
+          <li>
+            <h4>&#10002;&nbsp;Номер:</h4>
+            <p>2</p>
+          </li>
+          <li>
+            <h4>&#10002;&nbsp;Назначение:</h4>
+            <p class="p-block">
+              Используется для прорисовки фигур и&nbsp;округлых контуров.
+              <br />Подходит для для масла, акрила, гуаши, темперы.
+            </p>
+          </li>
+        </ul>
+        <h3>Цена</h3>
+        <p>120&nbsp;руб.</p>
+      </div>
       <hr />
     </main>
     <!-- подвал -->
