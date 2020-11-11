@@ -46,14 +46,14 @@ ul {
   width: 200px;
   padding: 30px 0;
   border-right: 2px solid #cccccc;
-  background-color: #aaaaaa;
+  background-color: #f17500;
   text-align: center;
   font-size: 24px;
   color: #ffffff;
 }
 .menu li:hover {
   background-color: #ffffff;
-  color: #aaaaaa;
+  color: #000000;
 }
 .menu li:last-child {
   border: none;
@@ -66,18 +66,21 @@ ul {
 h1,
 h3 {
   text-align: center;
+}
+h3 {
   font-size: 18px;
   font-weight: normal;
   background-color: #eaeaea;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 30px;
   padding: 5px;
+
 }
 hr {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.title {
+h1 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -109,13 +112,29 @@ hr {
   padding: 20px;
   font-size: 18px;
   color: black;
+  outline: 5px solid #f17500;
+}
+
+.description-full:first-letter,
+.description-short:first-letter {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 50px;
+  color: #f17500;
+}
+.description-short:first-letter {
+  font-size: 30px;
+  font-style: normal;
 }
 .container a {
-  display: block;
-  background-color: #aaaaaa;
+  display: block;  
   width: 210px;
   padding: 3px 5px 2px;
   margin: 0 auto;
+  outline: 5px solid #f17500;
+}
+.catalog a:hover,
+.container a:hover {
+  outline: none;
 }
 .description-short {
   color: #707070;
@@ -151,9 +170,31 @@ h4 + p {
 }
 .specifications {
   list-style-image: url("./img/ul-type.png");
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 20px;
+  border-collapse: collapse;
 }
+td,
+th {
+  padding: 5px;
+  border: 1px solid #aaaaaa
+}
+th {
+  height: 50px;
+  min-width: 100px;
+}
+td:first-child {
+font-weight: bold;
+min-width: 150px;
+}
+tr:nth-child(2) {
+  text-align: center;
+}
+tr:nth-child(2) td:first-child {
+  font-weight: normal;
+  min-width: 100px;
+  }
 ul b {
   text-decoration: underline;
 }
@@ -185,6 +226,14 @@ input[type="email"] {
 input::placeholder,
 textarea::placeholder {
   color: #aaaaaa;
+}
+input[type="email"]:focus {
+  background-color: #3c805a;
+  color: #fff;
+}
+input[type="text"]:focus,
+textarea:focus {
+text-transform: capitalize;
 }
 textarea {
   width: 100%;
