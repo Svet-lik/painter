@@ -8,30 +8,42 @@
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <!-- шапка сайта -->
-    <div class="wrapper">
-      <img src="../img/logo.png" alt="logo" class="logo">
-      <ul class="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../main-catalog.html">Каталог</a></li>
-        <li><a href="../contacts.html">Контакты</a></li>
-      </ul>
-    </div>
+    <header>
+      <div class="container">
+        <img src="../img/logo.png" alt="logo" class="logo" />
+        <ul class="menu">
+          <li><a href="../index.html">Главная</a></li>
+          <li><a href="../main-catalog.html">Каталог</a></li>
+          <li><a href="../contacts.html">Контакты</a></li>
+        </ul>
+      </div>
     </header>
     <!-- основная информация -->
     <main>
       <hr />
-      <div class="container">
+      <div class="wrapper">
         <h1>Кисть имитация мангуста</h1>
-        <a href="../img/brush_sinthetics.jpg" target="_blank">
-          <img src="../img/brush_sinthetics_small.jpg" />
-        </a>
-        <h3>Краткое описание товара</h3>
-        <p class="description-short">Кисть Roubloff имитация мангуста круглая &#8470;&nbsp;2</p>
+        <div class="catalog-wrapper">
+          <a href="../img/brush_sinthetics.jpg" target="_blank">
+            <img src="../img/brush_sinthetics.jpg" />
+          </a>
+          <div class="text-wrapper">
+            <p class="coast">120&nbsp;руб.</p>
+            <button class="button-buy">Купить</button>
+            <h3>Краткое описание товара</h3>
+            <p class="description-short">
+              Кисть Roubloff имитация мангуста круглая &#8470;&nbsp;2
+            </p>            
+          </div>
+        </div>
         <div class="specifications-fon">
           <h3>Характеристики товара</h3>
           <table class="specifications">
@@ -45,7 +57,7 @@
                 <th>акварели</th>
                 <th>туши</th>
               </tr>
-              <tr>                
+              <tr>
                 <td>+</td>
                 <td>+</td>
                 <td>+</td>
@@ -96,9 +108,7 @@
               <br />Подходит для для масла, акрила, гуаши, темперы.
             </p>
           </li>
-        </ul>
-        <h3>Цена</h3>
-        <p>120&nbsp;руб.</p>
+        </ul>        
       </div>
       <hr />
     </main>

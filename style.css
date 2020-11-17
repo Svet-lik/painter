@@ -30,11 +30,16 @@ ul {
   width: 1200px;
   margin: 0 auto;
 }
-.wrapper {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header,
+footer {
+  background: url('img/055_full_hd_wallpaper.jpg') ;
 }
 .menu {
   display: flex;
@@ -74,11 +79,9 @@ h3 {
   margin-bottom: 20px;
   margin-top: 30px;
   padding: 5px;
-
 }
 hr {
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 h1 {
   font-size: 30px;
@@ -108,7 +111,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 20px;
   font-size: 18px;
   color: black;
@@ -125,22 +128,31 @@ h1 {
   font-size: 30px;
   font-style: normal;
 }
-.container a {
+.wrapper a {
   display: block;  
-  width: 210px;
-  padding: 3px 5px 2px;
-  margin: 0 auto;
+  /* width: 210px; */
+  /* padding: 3px 5px 2px; */
+  /* margin: 0 auto; */
   outline: 5px solid #f17500;
 }
 .catalog a:hover,
-.container a:hover {
+.wrapper a:hover {
   outline: none;
+}
+.catalog-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.catalog-wrapper img {
+  width: 300px;
 }
 .description-short {
   color: #707070;
   font-size: 14px;
   font-style: italic;
   line-height: 16px;
+  margin-bottom: 15px;
 }
 .description-full {
   color: #484343;
@@ -148,6 +160,20 @@ h1 {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+}
+.coast,
+.button-buy{
+  display: inline-block;
+  margin: 10px 20px 0;
+}
+.coast {
+  color: #f17500;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.button-buy {
+  width: 150px;
 }
 h4 {
   font-weight: 500;
@@ -227,13 +253,15 @@ input::placeholder,
 textarea::placeholder {
   color: #aaaaaa;
 }
-input[type="email"]:focus {
-  background-color: #3c805a;
-  color: #fff;
-}
+input[type="email"]:focus,
 input[type="text"]:focus,
 textarea:focus {
-text-transform: capitalize;
+  background-color: #f17500;
+  color: #fff;
+}
+input[type="text"],
+textarea {
+  text-transform: capitalize;
 }
 textarea {
   width: 100%;
@@ -251,7 +279,7 @@ button {
   display: block;
   width: 200px;
   height: 50px;
-  background-color: #aaaaaa;
+  background-color: #f17500;
   color: #ffffff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -261,16 +289,22 @@ button {
   cursor: pointer;
 }
 button:hover {
+  background-color:#c99769;
+  color: #000000;
+}
+button:active {
   background-color: #eaeaea;
   color: #000000;
 }
 .address {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 iframe {
   margin-top: 30px;
+  width: 100%;
+  height: 374px;
 }
 .address + hr {
   margin: 10px;
@@ -279,7 +313,7 @@ iframe {
   color: #aaaaaa;
 }
 .address a:hover {
-  color: #000000;
+  color: #f17500;
   text-decoration: underline;
 }
 footer {
@@ -289,5 +323,6 @@ footer {
 footer p {
   padding-top: 20px;
   border-top: 1px solid #cccccc;
-  text-align: center;
+  text-align: right;
+  padding-right: 20px;
 }
